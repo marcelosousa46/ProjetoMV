@@ -16,10 +16,6 @@ inherited frmCadastroDepartamento: TfrmCadastroDepartamento
     inherited pgListagem: TPageControl
       ActivePage = tbCadastro
       inherited tbListagem: TTabSheet
-        ExplicitLeft = 4
-        ExplicitTop = 28
-        ExplicitWidth = 792
-        ExplicitHeight = 386
         inherited pnMenuListagem: TPanel
           inherited btnPesquisar: TSpeedButton
             OnClick = btnPesquisarClick
@@ -58,10 +54,6 @@ inherited frmCadastroDepartamento: TfrmCadastroDepartamento
         end
       end
       inherited tbCadastro: TTabSheet
-        ExplicitLeft = 4
-        ExplicitTop = 28
-        ExplicitWidth = 792
-        ExplicitHeight = 386
         object Label1: TLabel [0]
           Left = 15
           Top = 72

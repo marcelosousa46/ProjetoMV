@@ -50,7 +50,6 @@ inherited frmCadastroEmpregado: TfrmCadastroEmpregado
                 Expanded = False
                 FieldName = 'data_admissao'
                 Title.Caption = 'Admiss'#227'o'
-                Width = 64
                 Visible = True
               end
               item
