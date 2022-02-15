@@ -10,6 +10,7 @@ object frmPrincipal: TfrmPrincipal
   Font.Height = -13
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OldCreateOrder = True
   WindowState = wsMaximized
   OnShow = FormShow
   PixelsPerInch = 96
@@ -34,7 +35,7 @@ object frmPrincipal: TfrmPrincipal
       Color = clWhite
       ParentBackground = False
       TabOrder = 0
-      object SpeedButton2: TSpeedButton
+      object btSair: TSpeedButton
         AlignWithMargins = True
         Left = 0
         Top = 181
@@ -125,7 +126,7 @@ object frmPrincipal: TfrmPrincipal
           FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
         Margin = 10
         Spacing = 10
-        OnClick = SpeedButton2Click
+        OnClick = btSairClick
         ExplicitTop = 135
         ExplicitWidth = 145
       end
@@ -453,7 +454,7 @@ object frmPrincipal: TfrmPrincipal
         OnClick = btnMenuClick
         ExplicitWidth = 145
       end
-      object SpeedButton1: TSpeedButton
+      object btRelatorio: TSpeedButton
         AlignWithMargins = True
         Left = 0
         Top = 136
@@ -544,6 +545,7 @@ object frmPrincipal: TfrmPrincipal
           FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
         Margin = 10
         Spacing = 10
+        OnClick = btRelatorioClick
         ExplicitTop = 135
         ExplicitWidth = 145
       end

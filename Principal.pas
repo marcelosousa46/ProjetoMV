@@ -10,11 +10,11 @@ type
   TfrmPrincipal = class(TForm)
     pnFundos: TPanel;
     pnMenuLateral: TPanel;
-    SpeedButton2: TSpeedButton;
+    btSair: TSpeedButton;
     btDepartamento: TSpeedButton;
     btEmpregados: TSpeedButton;
     btnMenu: TSpeedButton;
-    SpeedButton1: TSpeedButton;
+    btRelatorio: TSpeedButton;
     pnBarra: TPanel;
     pnCentro: TPanel;
     pnTop: TPanel;
@@ -23,9 +23,10 @@ type
     pnRodape: TPanel;
     procedure btnMenuClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure SpeedButton2Click(Sender: TObject);
+    procedure btSairClick(Sender: TObject);
     procedure btDepartamentoClick(Sender: TObject);
     procedure btEmpregadosClick(Sender: TObject);
+    procedure btRelatorioClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -39,7 +40,7 @@ var
 implementation
 
 uses
-  uDepartamentoView, uEmpregadoView;
+  uDepartamentoView, uEmpregadoView, uRelatorioView;
 
 {$R *.dfm}
 
@@ -58,7 +59,17 @@ begin
   pnMenuLateral.Width := 40
 end;
 
-procedure TfrmPrincipal.SpeedButton2Click(Sender: TObject);
+procedure TfrmPrincipal.btRelatorioClick(Sender: TObject);
+begin
+  try
+    frmRelatorio:=TfrmRelatorio.Create(nil);
+    frmRelatorio.QuickRep1.PreviewModal;
+  finally
+    FreeAndNil(frmRelatorio)
+  end;
+end;
+
+procedure TfrmPrincipal.btSairClick(Sender: TObject);
 begin
   close;
 end;

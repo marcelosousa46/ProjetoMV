@@ -13,7 +13,8 @@ uses
   uEmpregadosModel in 'Models\uEmpregadosModel.pas',
   uEmpregadosRepository in 'Repositories\uEmpregadosRepository.pas',
   uEmpregadoView in 'Views\uEmpregadoView.pas' {frmCadastroEmpregado},
-  uEmpregadosController in 'Controllers\uEmpregadosController.pas';
+  uEmpregadosController in 'Controllers\uEmpregadosController.pas',
+  uRelatorioView in 'Views\uRelatorioView.pas' {frmRelatorio};
 
 {$R *.res}
 
